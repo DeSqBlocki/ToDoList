@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My To Do List</title>
+  <link rel="stylesheet" href="res\index.css">
+</head>
+
+<body>
+  <h1>My To Do List</h1>
+  <ul id="ul" class="checkmark">
+    <li id="li1">Example: Title - Description</li><br>
+    <!-- adding a first example of how it should look like -->
+  </ul>
+  <!-- defining list -->
+  <button class="open-button" onclick="openWindow()">Add New Entry</button>
+  <button onclick="myClear()" class="button">Clear All!</button>
+  <div class="form-popup" id="MyPopUp">
+      <label for="title" id="TitleP">Title:</label>
+      <input type="text" placeholder="Enter New Title" id="title"><br>
+      <!-- Title Input -->
+      <label for="desc" id="DescriptionP">Description: </label>
+      <input type="text" placeholder="Enter New Description" id="desc"><br>
+      <!-- Description Input -->
+      <button type="button" class="button" id="confirmbtn" onclick="confirmbtn()">Confirm New Entry</button>
+      <button type="button" class="button" id="closebtn" onclick="closeWindow()">Cancel</button>
+      <!-- Buttons -->
+  </div>
+
+<script type="text/javascript" src="res\script.js">
+</script>
+
+</body>
+</html>
